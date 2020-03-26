@@ -1,0 +1,45 @@
+
+img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+
+.main{
+    background: #fff;
+    width: 730px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.active{
+    text-align:center
+}
+
+.col-sm-6 col-md-4_1{
+    width: 500px;
+    height: 800px;
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.div_img{
+    width:300px;
+    height: 150px;
+    display: block;
+
+}
+
+.panel panel-default_1{
+    width: 550px;
+
+}
+
+div{
+    text-align: center;
+}
+
+

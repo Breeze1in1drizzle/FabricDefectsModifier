@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    {#    <link rel="icon" href="../../favicon.ico">#}
+    <title>first_page</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div>
+            <ul class="nav nav-tabs">
+                <a class="navbar-brand" href="#">首页&nbsp;&nbsp;</a>
+                <a class="navbar-brand" href="{{ url_for('single') }}">单次模式&nbsp;&nbsp;</a>
+                <a class="navbar-brand" href="{{ url_for('uploads') }}">文件模式&nbsp;&nbsp;</a>
+                <a class="navbar-brand" href="{{ url_for('analyse') }}">统计分析</a>
+                <a class="navbar-brand" href="#" style="float: right;margin-right: -10px;">用户</a>
+                <a class="navbar-brand" href="{{ url_for('first') }}" style="float: right;margin-right: -100px;">&nbsp;&nbsp;退出</a>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div>
+    <p>something important</p>
+    <p> </p>
+</div>
+<!-- Main jumbotron for a primary marketing message or call to action -->
+
+<div style="background: url('https://uploadfile.huiyi8.com/2018/af/70/8a/4c/169804.jpg') repeat;width:100%;height:600px">
+    <div class="container">
+            <p><br><br></p>
+        <h1 style="color: white;font-size: 60px;">Cloth Defect Detection System</h1><br>
+            <h3 style="color: white">在这个系统中，我们将通过上传图片自动进行布匹瑕疵的检测，通过相应算法分析瑕疵类别等数据信息，帮助工厂提高生产效率，实现布匹检测自动化工作。</h3>
+            <p></p><br>
+            <p>
+                <a class="btn btn-primary btn-lg" href="#" role="button" style="background-color: #6c757d;">点击右上角登录</a>
+            </p>
+        </div>
+    </div>
+
+<div style="width: 100%;">
+    <p><br></p>
+    <h1 style="text-align: center">检测步骤</h1>
+</div>
+
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-4">
+                <h2>STEP1</h2>
+                <img src="{{ url_for('static',filename='images/defaulting2.jpeg' ) }}"
+                     style="width: 300px;height: 220px">
+                <p></p>
+                <p><a class="btn btn-default" href="#" role="button" style="text-align: center;width: 300px">上传图片</a>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h2>STEP2</h2>
+                <img src="{{ url_for('static',filename='images/step2.jfif' ) }}" style="width: 300px;height: 220px">
+                <p></p>
+                <p><a class="btn btn-default" href="#" role="button" style="text-align: center;width: 300px">检测瑕疵</a>
+                </p>
+            </div>
+            <div class="col-md-4">
+                <h2>STEP3</h2>
+                <img src="{{ url_for('static',filename='images/step3.png' ) }}" style="width: 300px;height: 220px">
+                <p></p>
+                <p><a class="btn btn-default" href="#" role="button" style="text-align: center;width: 300px">划分类别</a>
+                </p>
+            </div>
+        </div>
+        <hr>
+
+
+    </div> <!-- /container -->
+
+
+
+</body>
+
+
+

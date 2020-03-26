@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    {#    <link rel="icon" href="../../favicon.ico">#}
+    <title>主页</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/uploads.css') }}">
+</head>
+<body >
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div>
+            <ul class="nav nav-tabs">
+                <a class="navbar-brand" href="{{ url_for('first') }}">首页&nbsp;&nbsp;</a>
+                <a class="navbar-brand" href="{{ url_for('single') }}">单次模式&nbsp;&nbsp;</a>
+                <a class="navbar-brand" href="{{ url_for('uploads') }}">文件模式&nbsp;&nbsp;</a>
+                <a class="navbar-brand" href="{{ url_for('analyse') }}">统计分析</a>
+                <a class="navbar-brand" href="#" style="float: right;margin-right: -10px;">用户</a>
+                <a class="navbar-brand" href="{{ url_for('first') }}" style="float: right;margin-right: -100px;">&nbsp;&nbsp;退出</a>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+
+<div>
+    <p>something important</p>
+    <p> <br><br></p>
+</div>
+
+<div class="jumbotron1" style="width: 100%;height: 640px;align-items: center;justify-content: center;left: 10px;
+">
+
+    <div class="container"
+         style="float: left;width: 500px;height:450px;justify-content: center;align-items: center;text-align:center;">
+        <div class="form-group" style="text-align: center;justify-content: center;">
+            <p></p>
+            <label class="btn btn-default" href="#" role="textbox"
+                   style="text-align: center;width: 350px;background-color: #6c757d;color: white">
+                <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>上传文件</label>
+        </div>
+        <div style="text-align: center;justify-content: center;">
+            <p><a class="btn btn-default" href="#" type="file" role="button"
+                  style="text-align: center;width: 350px;height:300px;line-height: 300px;">点击选择文件</a></p>
+        </div>
+        <div style="text-align: center;justify-content: center">
+            <p><a class="btn btn-default" href="#" type="submit" role="button"
+                  style="text-align: center;width: 350px;background-color: #8ab5d6;color: white;">开始检测</a></p>
+        </div>
+    </div>
+
+
+    <div class="container"
+         style="float: left;width: 400px;height:430px;background-color: #8ab5d6;">
+        <div>
+
+            <button class="h2_border">Cloth Defect Detection System</button>
+            <div class="form-group" style="text-align: center;justify-content: center;">
+                <img src="{{ url_for('static',filename='images/loading3.gif') }}" style="width: 300px;height: 150px;">
+            </div>
+            <p ><h3 style="color: white">通过上传图片集的压缩格式，进行自动化检测布匹瑕疵位置与瑕疵类别，更加方面工厂找出问题布匹的效率</h3></p>
+        </div>
+    </div>
+
+
+    <div class="container"
+         style="float: left;width: 600px;height:430px;justify-content: center;align-items: center;text-align:center;
+         border: #8ab5d6;background-color: #8ab5d6">
+        <div>
+            <p> <br></p>
+        </div>
+        <div class="form-group" style="text-align: center;justify-content: center;">
+            <img src="{{ url_for('static',filename='images/loading.gif') }}" style="width: 300px;">
+        </div>
+        <div style="text-align: center;justify-content: center;">
+            <table style="text-align: center; margin:auto;">
+                <tr>
+                    <td style="color: white;">图片总数: &nbsp;</td><td></td>
+                    <td><input class="form-control" id="disabledInput" type="text" placeholder="0" disabled></td>
+                </tr>
+            </table>
+            <p></p>
+        </div>
+        <div style="text-align: center;justify-content: center">
+            <table style="text-align: center;margin:auto;">
+                <tr>
+                    <td style="color: white;">疵点总数: &nbsp;</td>
+                    <td> </td>
+                    <td><input class="form-control" id="disabledInput" type="text" placeholder="0" disabled></td>
+                </tr>
+            </table>
+            <p></p>
+        </div>
+        <div>
+            <a href="#" style="color: wheat;"> <h4><span class="glyphicon glyphicon-print" aria-hidden="true"></span> 点击下载信息</h4></a>
+
+        </div>
+{#        <div style="text-align: center;justify-content: center;">#}
+{#            <p></p>#}
+{#            <a href="#" style="color: wheat"><h3>查看所有历史数据</h3></a>#}
+{#        </div>#}
+    </div>
+
+</div>
+
+</body>
