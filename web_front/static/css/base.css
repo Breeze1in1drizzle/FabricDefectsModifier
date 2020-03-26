@@ -1,0 +1,28 @@
+
+.logos{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+
+}
+.body{
+    background: lightskyblue;
+}
+
+.main{
+
+
+    margin: 0 auto;
+    overflow: hidden;
+    position: center;
+}
+
+.before_main{
+
+    position: center;
+
+}
+
+.form-horizontal{
+    margin: 0 auto;
+}
